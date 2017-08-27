@@ -1,4 +1,10 @@
-# Fwtparty
+# [Fwtparty](https://fwtparty.firebaseapp.com/)
+
+## Why
+To easily sort team members in the game Fantasy War Tactics, Nexon©.
+
+## Whom For
+M340857
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.2.
 
