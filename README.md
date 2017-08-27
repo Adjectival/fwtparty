@@ -4,7 +4,13 @@
 To easily sort team members in the game Fantasy War Tactics, Nexon©.
 
 ## Whom For
+![screenshot](Illust_Yekaterina_01.png)
 M340857
+***
+
+## Legal 
+ISC software license. Use and enjoy freely.
+_All images and IP copyright of Nexon!_
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.2.
 
