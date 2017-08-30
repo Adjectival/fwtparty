@@ -1,26 +1,42 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div class="app-shell row" >
-  
-  <ul class="btn-group btn-group-vertical col p-0" role="group">
-      <button type="button" class="btn btn-secondary btn-color-1"><i class="em em-gem"></i> Rock</button>
-      <button type="button" class="btn btn-secondary btn-color-2"><i class="em em-page_facing_up"></i> Paper</button>
-      <button type="button" class="btn btn-secondary btn-color-3"><i class="em em-scissors"></i> Scissors</button>
-      <button type="button" class="btn btn-secondary"><i class="em em-eight_spoked_asterisk"></i> AreaAttack</button>
-      <button type="button" class="btn btn-secondary"><i class="em em-large_orange_diamond"></i> Attack</button>
-      <button type="button" class="btn btn-secondary"><i class="em em-arrows_counterclockwise"></i> Balance</button>
-      <button type="button" class="btn btn-secondary"><i class="em em-large_blue_circle"></i> Defense</button>
-      <button type="button" class="btn btn-secondary"><i class="em em-heart_decoration"></i> Support</button>
-    </ul>
-  
+<div class="app-shell container" >
+
+  <div class="row">
     <div class="col">
-    <h2>{{title}}
-      <img class="main-image" width="25%" src="https://vignette3.wikia.nocookie.net/fwt/images/e/e3/Illust_Yekaterina_01.png/revision/latest?cb=20160123021259">
-    </h2>
-    <div class="team-zone">
-      <p>Team Zone</p>
+
+      <div class="dropdown open d-inline">
+        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownSelect" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+        Sort Heroes
+        </button>
+        <div class="dropdown-menu">
+      <a class="dropdown-item color-1" href="#"><i class="em em-gem"></i> Rock</a>
+      <a class="dropdown-item color-2" href="#"><i class="em em-page_facing_up"></i> Paper</a>
+      <a class="dropdown-item color-3" href="#"><i class="em em-scissors"></i> Scissors</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#"><i class="em em-eight_spoked_asterisk"></i> AreaAttack</a>
+      <a class="dropdown-item" href="#"><i class="em em-large_orange_diamond"></i> Attack</a>
+      <a class="dropdown-item" href="#"><i class="em em-arrows_counterclockwise"></i> Balance</a>
+      <a class="dropdown-item" href="#"><i class="em em-large_blue_circle"></i> Defense</a>
+      <a class="dropdown-item" href="#"><i class="em em-heart_decoration"></i> Support</a>
+      </div>
+    </div>
+
+      <h2 class="d-inline">{{title}}
+        <img class="main-image" width="25%" src="https://vignette3.wikia.nocookie.net/fwt/images/e/e3/Illust_Yekaterina_01.png/revision/latest?cb=20160123021259">
+      </h2>
+
     </div>
   </div>
-</div>
+
+  <div class="row">
+    <div class="col">
+
+      <div class="team-zone mx-1">
+        <p>Team Zone</p>
+      </div>
+
+    </div>
+  </div>
 
 
 <h5 class="credit mt-2"><a target="_blank" href="https://alexanderjacks.com">Alexander Jacks Consulting</a></h5>
