@@ -35,7 +35,7 @@
     </div>
   </div>
 
-  <div class="row">
+  <div class="row mt-1">
 
     <div class="col">
       <div class="dropdown open d-inline">
@@ -44,6 +44,7 @@
               Sort by Prop
               </button>
         <div class="dropdown-menu">
+          <a class="dropdown-item" href="#"> -all-</a>
           <a class="dropdown-item color-1" href="#"><i class="em em-gem"></i> Rock</a>
           <a class="dropdown-item color-2" href="#"><i class="em em-page_facing_up"></i> Paper</a>
           <a class="dropdown-item color-3" href="#"><i class="em em-scissors"></i> Scissors</a>
@@ -53,11 +54,12 @@
   
     <div class="col">
       <div class="dropdown open d-inline">
-        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownSelect" data-toggle="dropdown" aria-haspopup="true"
+        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownSelect" data-toggle="dropdown" aria-haspopup="true"
           aria-expanded="false">
               Sort by Type
               </button>
         <div class="dropdown-menu">
+          <a class="dropdown-item" href="#"> -all-</a>
           <a class="dropdown-item" href="#"><i class="em em-eight_spoked_asterisk"></i> AreaAttack</a>
           <a class="dropdown-item" href="#"><i class="em em-large_orange_diamond"></i> Attack</a>
           <a class="dropdown-item" href="#"><i class="em em-arrows_counterclockwise"></i> Balance</a>
@@ -68,6 +70,27 @@
     </div>
 
   </div>
+
+  <div class="row mt-1 card">
+    <ul class="list-group list-group-flush">
+      <li *ngFor="let hero of heroes"
+         class="list-group-item flex-row justify-content-around m-1">
+        <h4>
+          <span class="badge badge-default">{{hero.id}}</span>
+        </h4>
+        <h2>
+          {{hero.name}}
+        </h2>
+        <h2>
+          {{hero.property}}
+        </h2>
+        <h2>
+          {{hero.type}}
+        </h2>
+      </li>
+    </ul>
+  </div>
+
 
 <h5 class="credit mt-2"><a target="_blank" href="https://alexanderjacks.com">Alexander Jacks Consulting</a></h5>
 
