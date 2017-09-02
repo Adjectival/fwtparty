@@ -6,18 +6,10 @@ h2 {
 }
 .main-image {
     border: 3px solid blanchedalmond;
+    width: 160px;
     border-style: ridge;
 }
 
-.color-1 {
-    background-color: #C7393B;
-}
-.color-2 {
-    background-color: #4387AA;
-}
-.color-3 {
-    background-color: #B6CF41;
-}
 .app-shell {
     text-align: center;
 }
