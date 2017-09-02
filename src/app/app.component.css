@@ -1,4 +1,4 @@
-h2 {
+h2, h3 {
     color:firebrick;
 }
 .header {
@@ -6,26 +6,11 @@ h2 {
 }
 .main-image {
     border: 3px solid blanchedalmond;
-    width: 160px;
+    width: 150px;
     border-style: ridge;
 }
-
 .app-shell {
     text-align: center;
-}
-.team-zone {
-    width: 95%;
-    height: 180px;
-    background-color: forestgreen;
-    border: 4px solid white;
-    position: relative;
-}
-.team-zone p {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform:translate( -50%, 50%);
 }
 .credit {
     text-align: center;

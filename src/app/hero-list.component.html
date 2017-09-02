@@ -1,3 +1,18 @@
+<div class="row header">
+  <div class="col">
+
+    <div class="team-zone mx-1 my-2">
+      <p>Team Zone</p>
+      <div *ngIf="selectedHero">
+        <h1>{{selectedHero.name}}
+        </h1>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
 <div class="row mt-1">
 
   <div class="col">
@@ -36,7 +51,7 @@
 
 <div class="row mt-1 card">
   <ul class="list-group list-group-flush">
-    <li *ngFor="let hero of heroes" class="list-group-item flex-row justify-content-around m-1">
+    <li *ngFor="let hero of heroes" (click)="onSelect(hero)" class="list-group-item flex-row justify-content-around m-1">
       <h4>
         <span class="badge badge-default">{{hero.id}}</span>
       </h4>
