@@ -1,12 +1,18 @@
 <div class="row header">
   <div class="col">
 
-    <div class="team-zone mx-1 my-2">
-      <p>Team Zone</p>
-      <div *ngIf="selectedHero">
-        <h1>{{selectedHero.name}}
-        </h1>
-      </div>
+    <div class="team-zone card">
+      <ul *ngIf="selectedHero" class="list-group list-group-flush">
+        <li class="list-group-item p-1 m-1">{{selectedHero.name}}</li>
+      </ul>
+    </div>
+
+    <div class="team-zone card">
+      <ul *ngIf="heroParty" class="list-group list-group-flush">
+        <li
+        *ngFor="let hero of heroParty"
+        class="list-group-item p-1 m-1">Test</li>
+      </ul>
     </div>
 
   </div>
@@ -29,7 +35,7 @@
       </div>
     </div>
   </div>
-
+  
   <div class="col">
     <div class="dropdown open d-inline">
       <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownSelect" data-toggle="dropdown" aria-haspopup="true"
@@ -51,19 +57,19 @@
 
 <div class="row mt-1 card">
   <ul class="list-group list-group-flush">
-    <li *ngFor="let hero of heroes" (click)="onSelect(hero)" class="list-group-item flex-row justify-content-around m-1">
+    <li *ngFor="let hero of heroes" (click)="onSelect(hero)" class="list-group-item row justify-content-between m-1">
       <h4>
         <span class="badge badge-default">{{hero.id}}</span>
       </h4>
-      <h2>
+      <h4>
         {{hero.name}}
-      </h2>
-      <h2>
+      </h4>
+      <h4>
         {{hero.property}}
-      </h2>
-      <h2>
+      </h4>
+      <h4>
         {{hero.type}}
-      </h2>
+      </h4>
     </li>
   </ul>
 </div>

@@ -1,0 +1,15 @@
+<h2>
+  <label class="btn btn-primary active">
+    <input *ngIf="hero.selected === true" type="checkbox" checked (click)="flipSelected(false)" />
+    <input *ngIf="hero.selected === false" type="checkbox" (click)="flipSelected(true)" />
+  </label class="btn btn-primary">
+</h2>
+<h2>
+  {{hero.name}}
+</h2>
+<h2>
+  {{hero.property}}
+</h2>
+<h2>
+  {{hero.type}}
+</h2>
