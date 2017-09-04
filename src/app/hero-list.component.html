@@ -51,10 +51,19 @@
 
 <div class="row mt-1 card">
   <ul class="list-group list-group-flush">
-    <li *ngFor="let hero of heroes" (click)="onSelect(hero)" class="list-group-item flex-row justify-content-around m-1">
-      <h4>
-        <span class="badge badge-default">{{hero.id}}</span>
-      </h4>
+    <li
+    *ngFor="let hero of heroes"
+    (click)="onSelect(hero)" class="list-group-item flex-row justify-content-around m-1">
+      <input
+        type="checkbox" checked
+        *ngIf='hero.party===true'
+        (click)='flipboolParty(false)'
+      />
+      <input
+        type="checkbox"
+        *ngIf='hero.party===false'
+        (click)='flipboolParty(true)'
+      />
       <h2>
         {{hero.name}}
       </h2>
@@ -63,6 +72,9 @@
       </h2>
       <h2>
         {{hero.type}}
+      </h2>
+      <h2>
+        {{hero.party}}
       </h2>
     </li>
   </ul>
