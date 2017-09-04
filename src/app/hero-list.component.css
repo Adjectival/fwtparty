@@ -7,6 +7,9 @@
 .color-3 {
     background-color: #B6CF41;
 }
+.active {
+    color: gold;
+}
 .team-zone {
     width: 95%;
     height: 25vh;

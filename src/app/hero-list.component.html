@@ -2,11 +2,20 @@
   <div class="col">
 
     <div class="team-zone mx-1 my-2">
-      <p>Team Zone</p>
-      <div *ngIf="selectedHero">
-        <h1>{{selectedHero.name}}
-        </h1>
+      <p>Party Zone</p>
+
+      <div *ngFor="let hero of fwtParty">  
+        <h5>{{fwtParty.hero.id}}</h5>
       </div>
+
+    </div>
+    <div *ngIf="selectedHero">
+      <h5>{{selectedHero.name}}</h5>
+      <input class="form-control"
+       [(ngModel)]="selectedHero.name">
+    </div>
+    <div *ngIf="!selectedHero">
+      <h3>{{please_msg}}</h3>
     </div>
 
   </div>
@@ -51,19 +60,7 @@
 
 <div class="row mt-1 card">
   <ul class="list-group list-group-flush">
-    <li *ngFor="let hero of heroes" (click)="onSelect(hero)" class="list-group-item flex-row justify-content-around m-1">
-      <h4>
-        <span class="badge badge-default">{{hero.id}}</span>
-      </h4>
-      <h2>
-        {{hero.name}}
-      </h2>
-      <h2>
-        {{hero.property}}
-      </h2>
-      <h2>
-        {{hero.type}}
-      </h2>
-    </li>
+    <app-hero>
+    </app-hero>
   </ul>
 </div>
