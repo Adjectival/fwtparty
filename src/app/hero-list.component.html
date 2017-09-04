@@ -52,8 +52,7 @@
 <div class="row mt-1 card">
   <ul class="list-group list-group-flush">
     <li
-    *ngFor="let hero of heroes"
-    (click)="onSelect(hero)" class="list-group-item flex-row justify-content-around m-1">
+    *ngFor="let hero of heroList" class="list-group-item flex-row justify-content-around m-1">
       <input
         type="checkbox" checked
         *ngIf='hero.party===true'

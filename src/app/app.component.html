@@ -27,7 +27,10 @@
 
   </div>
 
-  <app-hero-list></app-hero-list>
+  <app-hero-list
+    [heroList]='heroes'
+    (clickSender)="onSelect($event)">
+  </app-hero-list>
   
   <h5 class="credit mt-2"><a target="_blank" href="https://alexanderjacks.com">Alexander Jacks Consulting</a></h5>
 
